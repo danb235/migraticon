@@ -56,3 +56,12 @@ To download those emoticons enter the following:
 ```
 $ migraticon fetch
 ```
+
+## Contributing
+
+If contributing clone the repo and run the following:
+
+```
+$ ./bin/migraticon --help
+$ ./bin/migraticon fetch
+```
