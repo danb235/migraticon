@@ -2,9 +2,13 @@
   "preferGlobal": true,
   "main": "index",
   "name": "migraticon",
-  "description": "A simple CLI tool to migrate hipchat emoticons to slack.",
-  "version": "0.0.1",
+  "description": "A simple CLI tool to download your hipchat emoticons. Eventually (hopefully) slack you will be able to upload them to slack.",
+  "version": "0.0.2",
   "author": "Daniel Bohannon <tkdan235@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tkdan235/migraticon.git"
+  },
   "engines": {
     "node": ">=0.10.0"
   },
@@ -16,15 +20,13 @@
     "slack"
   ],
   "dependencies": {
-    "async": "^1.5.2",
-    "coffee-script": "^1.10.0",
-    "colors": "^1.1.2",
-    "commander": "^2.9.0",
-    "fs-extra": "^0.26.5",
-    "lodash": "^4.2.0",
-    "nightmare": "^2.1.6",
-    "prompt": "^0.2.14",
-    "request": "^2.69.0"
+    "async": "1.5.2",
+    "coffee-script": "1.10.0",
+    "colors": "1.1.2",
+    "commander": "2.9.0",
+    "fs-extra": "0.26.5",
+    "nightmare": "2.1.6",
+    "prompt": "0.2.14"
   },
   "coffeelintConfig": {
     "max_line_length": {

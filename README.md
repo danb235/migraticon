@@ -1,5 +1,5 @@
 # migraticon
-A simple CLI tool to migrate hipchat emoticons to slack (the slack part isn't done yet though).
+A simple CLI tool to download your hipchat emoticons. Eventually (hopefully) slack you will be able to upload them to slack.
 
 This project is early in dev and a WIP. Please file issues!
 
@@ -9,7 +9,7 @@ This project is early in dev and a WIP. Please file issues!
 
 ## About
 
-Use **migraticon** to download your emoticons from hipchat then eventually upload them to slack:
+Use **migraticon** to download your emoticons from hipchat:
 * Logs into hipchat and get list of emoticons using [nightmarejs](http://www.nightmarejs.org/).
 * Downloads emoticons to `~/Downloads/Hipchat_Emoticons`.
 * Renames emoticons to get rid of there weird hipchat filenames.
@@ -21,7 +21,7 @@ Coming soon:
 ## Setup
 ### Dependencies
 
-[NodeJS](http://nodejs.org/) is required to run migraticon. Find the installer and install the latest version; if using Mac OSX consider installing [homebrew](http://brew.sh/) and easily install what you need with the following:  
+[NodeJS](http://nodejs.org/) is required to run **migraticon**. Find the installer and install the latest version; if using Mac OSX consider installing [homebrew](http://brew.sh/) and easily install what you need with the following:  
 
 ```
 $ brew install node
