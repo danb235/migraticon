@@ -38,7 +38,7 @@ class Hipchat extends Browser
       urlfilenameClean = urlfilename.replace(/-\w*/, '')
 
     # download the emoticon
-    console.log 'Downloading ', urlfilename, '-->', @path + '/' + urlfilenameClean
+    console.log 'Downloading:'.yellow.bold, urlfilename, '-->', @path + '/' + urlfilenameClean
     file = fs.createWriteStream(@path + '/' + urlfilenameClean)
     request = https.get(url, (response) ->
       response.pipe file
