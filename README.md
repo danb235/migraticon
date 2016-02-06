@@ -1,5 +1,5 @@
 # migraticon
-A simple CLI tool to download your hipchat emoticons. Eventually (hopefully) slack you will be able to upload them to slack.
+A simple CLI tool to download your hipchat emoticons. Eventually with **migraticon** you will be able to upload them to slack as well.
 
 This project is early in dev and a WIP. Please file issues!
 
