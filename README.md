@@ -5,7 +5,7 @@ This project is early in dev and a WIP. Please file issues!
 
 ## Demo
 
-![demo](https://cloud.githubusercontent.com/assets/3709575/12862455/ae09e34a-cc20-11e5-8f70-003f088cd7d4.gif)
+![demo](https://cloud.githubusercontent.com/assets/3709575/12863656/389bb0d0-cc2e-11e5-8a23-6cbec2b14776.gif)
 
 ## About
 
