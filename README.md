@@ -1,5 +1,5 @@
 # migraticon
-A simple CLI tool to download your ![hipchat](/images/HipChat.png) emoticons. Eventually (hopefully) ![slack](/images/slack.png) you will be able to upload them to slack.
+A simple CLI tool to download your ![hipchat](/images/HipChat.png) emoticons. Eventually (hopefully) you will be able to upload them to ![slack](/images/slack.png).
 
 This project is early in dev and a WIP. Please file issues!
 
