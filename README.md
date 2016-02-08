@@ -1,5 +1,5 @@
 # migraticon
-A simple CLI tool to download your ![hipchat](https://raw.githubusercontent.com/tkdan235/migraticon/4a713d5e94a62a3e4d6fd8b25ce2daecbdf51ea2/images/HipChat_sm.png) emoticons. Eventually with **migraticon** you will be able to upload them to ![slack](https://raw.githubusercontent.com/tkdan235/migraticon/4a713d5e94a62a3e4d6fd8b25ce2daecbdf51ea2/images/slack_sm.png) as well.
+A simple CLI tool to download your ![hipchat](https://cloud.githubusercontent.com/assets/2208083/12897077/42e02d90-ce5a-11e5-8061-b3d6693f6835.png) emoticons. Eventually with **migraticon** you will be able to upload them to ![slack](https://cloud.githubusercontent.com/assets/2208083/12897066/322b3b20-ce5a-11e5-9010-c568604c7762.png) as well.
 
 This project is early in dev and a WIP. Please file issues!
 
