@@ -4,6 +4,8 @@ fs = require 'fs-extra'
 https = require 'https'
 prompt = require 'prompt'
 colors = require 'colors'
+YAML = require 'js-yaml'
+_ = require 'lodash'
 
 class Hipchat extends Browser
   hipchatURL: 'https://www.hipchat.com/sign_in?d=/emoticons'
@@ -30,20 +32,48 @@ class Hipchat extends Browser
     download(0)
 
   downloadEmoticon: (url, callback) ->
-    # get the emoticon filenames
-    urlfilename = url.replace(/^.*[\\\/]/, '')
-    if urlfilename.match(/-\w*@\w*/)
-      urlfilenameClean = urlfilename.replace(/-\w*@\w*/, '')
-    else if urlfilename.match(/-\w*/)
-      urlfilenameClean = urlfilename.replace(/-\w*/, '')
+    # get file name
+    originalFile = url.replace(/^.*[\\\/]/, '')
+    # get cleaned file name
+    newFile = @getFileName url
 
     # download the emoticon
-    console.log 'Downloading:'.yellow.bold, urlfilename, '-->', @path + '/' + urlfilenameClean
-    file = fs.createWriteStream(@path + '/' + urlfilenameClean)
+    console.log 'Downloading:'.yellow.bold, originalFile, '-->', @path + '/' + newFile
+    file = fs.createWriteStream(@path + '/' + newFile)
     request = https.get(url, (response) ->
       response.pipe file
       callback()
     )
+
+  getFileName: (url, callback) ->
+    # get the emoticon filename
+    file = url.replace(/^.*[\\\/]/, '')
+
+    # clean out hipchat file hash from the filename
+    if file.match(/-\w*@\w*/)
+      file = file.replace(/-\w*@\w*/, '')
+    else if file.match(/-\w*/)
+      file = file.replace(/-\w*/, '')
+
+  generateYAML: (callback) ->
+    console.log '==> '.cyan.bold + 'generate emoji YAML file'
+    # create emojis object
+    emoticons = {}
+    emoticons.title = @hipchatUsername
+    emoticons.emojis = []
+    _.each @urls, (url) =>
+      emoticons.emojis.push
+        name: @getFileName url
+        src: url
+
+    # convert object to yaml file
+    yamlString = YAML.safeDump emoticons
+
+    # write to disk
+    ws = fs.createOutputStream(@path + '/' + @hipchatUsername + '.yaml')
+    ws.write yamlString
+    console.log @path + '/' + @hipchatUsername + '.yaml has been created...'
+    callback()
 
   promptUsername: (callback) ->
     # prompt the user for their hipchat credentials

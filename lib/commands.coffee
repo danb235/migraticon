@@ -23,6 +23,10 @@ program.command('fetch')
         hipchat.getHipchatEmoticons ->
           callback()
       (callback) ->
+        # generate YAML file
+        hipchat.generateYAML ->
+          callback()
+      (callback) ->
         # download emoticons
         hipchat.downloadAll ->
           callback()

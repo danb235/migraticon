@@ -25,6 +25,8 @@
     "colors": "1.1.2",
     "commander": "2.9.0",
     "fs-extra": "0.26.5",
+    "js-yaml": "3.5.2",
+    "lodash": "4.3.0",
     "nightmare": "2.1.6",
     "prompt": "0.2.14"
   },
