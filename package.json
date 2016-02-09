@@ -21,7 +21,14 @@
     "hipchat",
     "download",
     "migrate",
-    "slack"
+    "emoticon",
+    "communication",
+    "chat",
+    "emoji",
+    "emojis",
+    "slack",
+    "slackin",
+    "slacker" 
   ],
   "dependencies": {
     "async": "1.5.2",
