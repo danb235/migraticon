@@ -35,7 +35,6 @@ $ sudo npm install -g migraticon
 
 ```
 $ sudo npm uninstall -g migraticon
-$ rm -rf ~/.migraticon
 ```
 
 ## Usage
