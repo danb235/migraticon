@@ -67,7 +67,7 @@ class Hipchat extends Browser
         src: url
 
     # convert object to yaml file
-    yamlString = YAML.safeDump emoticons
+    yamlString = YAML.safeDump(emoticons, {skipInvalid: true})
 
     # write to disk
     ws = fs.createOutputStream(@path + '/' + @hipchatUsername + '.yaml')
