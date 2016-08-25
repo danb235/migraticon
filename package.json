@@ -3,7 +3,7 @@
   "main": "index",
   "name": "migraticon",
   "description": "A simple CLI tool to download your hipchat emoticons.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Daniel Bohannon <tkdan235@gmail.com>",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "emojis",
     "slack",
     "slackin",
-    "slacker" 
+    "slacker"
   ],
   "dependencies": {
     "async": "1.5.2",

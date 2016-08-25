@@ -1,6 +1,8 @@
 # migraticon
 A simple CLI tool to download your Hipchat emoticons and generate a YAML file.  Use the YAML file to import your emoticons into Slack using [emojipacks](https://github.com/lambtron/emojipacks).
 
+Currently does not support hipchat accounts using Google Authentication.
+
 ## Demo
 
 ![demo](https://cloud.githubusercontent.com/assets/3709575/12863656/389bb0d0-cc2e-11e5-8a23-6cbec2b14776.gif)
@@ -25,7 +27,7 @@ $ brew install node
 
 ### Install
 
-Be sure all [dependencies](#Dependencies) are install before installing **migraticon**.
+Be sure all [dependencies](#Dependencies) are installed before installing **migraticon**.
 
 ```
 $ sudo npm install -g migraticon
