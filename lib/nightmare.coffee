@@ -29,6 +29,7 @@ class Nightmare
     browser
       .wait('input[name="email"]')
       .type('input[name="email"]', @hipchatUsername)
+      .click('input[name="signin"]')
       .wait('input[name="password"]')
       .type('input[name="password"]', @hipchatPassword)
       .wait('input[name="signin"]')
